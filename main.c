@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 14:04:00 by csuomins          #+#    #+#             */
-/*   Updated: 2026/01/28 15:22:36 by csuomins         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:29:26 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,10 @@ int	main(int ac, char **av)
 	int			i;
 
 	if (init_args(&rules, ac, av, &philos))
-		return (printf("Error\n"), 1);
+	{
+		printf("Error\n");
+		return (1);
+	}
 	pthread_create(&monitor, NULL, monitor_routine, philos);
 	i = 0;
 	while (i < rules.number_of_philosophers)

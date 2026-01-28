@@ -6,7 +6,7 @@
 /*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 14:04:11 by csuomins          #+#    #+#             */
-/*   Updated: 2026/01/28 14:04:12 by csuomins         ###   ########.fr       */
+/*   Updated: 2026/01/28 15:31:12 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,7 @@ static int	check_all_finished(t_rules *r)
 	int	all_finished;
 
 	pthread_mutex_lock(&r->finish_mutex);
-	if (r->must_eat != -1
-		&& r->finished >= r->number_of_philosophers)
+	if (r->must_eat != -1 && r->finished >= r->number_of_philosophers)
 		all_finished = 1;
 	else
 		all_finished = 0;
