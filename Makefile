@@ -6,7 +6,7 @@
 #    By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/28 14:04:41 by csuomins          #+#    #+#              #
-#    Updated: 2026/01/28 14:04:42 by csuomins         ###   ########.fr        #
+#    Updated: 2026/02/01 13:59:20 by csuomins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SRCS = main.c \
        monitor.c \
        philo_routine.c \
        start_simulations.c \
+       parse_args.c \
        utils.c
 
 OBJS = $(SRCS:.c=.o)

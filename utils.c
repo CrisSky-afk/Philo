@@ -3,16 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
+/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 14:04:33 by csuomins          #+#    #+#             */
-/*   Updated: 2026/01/31 15:55:12 by cris_sky         ###   ########.fr       */
+/*   Updated: 2026/02/01 13:53:21 by csuomins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-// Returns time in milliseconds
 long	get_time(void)
 {
 	struct timeval	tv;
@@ -21,7 +20,6 @@ long	get_time(void)
 	return (tv.tv_sec * 1000 + tv.tv_usec / 1000);
 }
 
-// Sleeps for a given time in milliseconds
 void	ft_usleep(long time)
 {
 	long	start;
