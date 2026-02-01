@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   monitor.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csuomins <csuomins@student.42.fr>          +#+  +:+       +#+        */
+/*   By: cris_sky <cris_sky@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 14:04:11 by csuomins          #+#    #+#             */
-/*   Updated: 2026/01/28 15:31:12 by csuomins         ###   ########.fr       */
+/*   Updated: 2026/01/31 16:08:31 by cris_sky         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
+// Checks if all philosophers have finished eating
 static int	check_all_finished(t_rules *r)
 {
 	int	all_finished;
